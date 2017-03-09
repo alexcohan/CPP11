@@ -11,7 +11,8 @@ struct Node {
 class Trie {
   public:
 
-    void build_trie(const std::string words[], const int &length);
+    Trie()=default;
+    Trie(const std::string words[], const int &length);
     void insert(const std::string &word);
     bool search(const std::string &word) const;
 
@@ -24,7 +25,7 @@ class Trie {
 
 
 
-void Trie::build_trie(const std::string words[], const int &length) {
+Trie::Trie(const std::string words[], const int &length) {
   for (int i=0; i<length; ++i) {
     insert(words[i]);
   }
