@@ -1,5 +1,6 @@
 //Min Heap using std::vector
 #include <vector>
+#include <iostream>
 
 template<class T>
 class minHeap {
