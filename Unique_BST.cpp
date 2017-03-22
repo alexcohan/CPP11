@@ -1,4 +1,5 @@
 //binary search tree made entirely with unique_ptrs
+//"Happiness is a tree of unique_pts" Herb Sutter
 #include <iostream>
 #include <string>
 #include <memory>
