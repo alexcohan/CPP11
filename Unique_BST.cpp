@@ -74,8 +74,8 @@ class Tree {
        ~Tree() = default; 
        Tree(Tree&&) = default; 
        Tree& operator =(Tree&&) = default; 
-       Tree(const Tree&); 
-       Tree& operator =(const Tree&); 
+       Tree(const Tree&) = default; 
+       Tree& operator =(const Tree&) = default; 
        void push(const T& t){
            if(!root){
                root = std::make_unique<Node> ();
