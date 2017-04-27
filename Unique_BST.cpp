@@ -10,7 +10,7 @@ class Tree {
         T key; 
         std::unique_ptr<Node> left; 
         std::unique_ptr<Node> right; 
-        Node():key(), left(), right(){} 
+        Node() = default;
         Node(T x):key(x),left(), right(){} 
         
             const T& min() const{
